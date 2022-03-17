@@ -2,7 +2,11 @@
   "name": "weathercli",
   "version": "1.0.0",
   "description": "CLI for getting weather",
-  "main": "index.js",
+  "main": "weather.js",
+  "bin": {
+    "weather": "wether.js"
+  },
+  "type": "module",
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,5 +21,9 @@
   "repository": {
     "type": "git",
     "url": "https://"
+  },
+  "dependencies": {
+    "axios": "^0.26.1",
+    "chalk": "^5.0.1"
   }
 }
